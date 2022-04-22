@@ -22,7 +22,7 @@ export default ({item}) => {
                     <div className='featured--horizontal'>
                         <div className='featured--name'>{item.original_name}</div>
                         <div className='featured--info'>
-                            <div className='featured--points'>{item.vote_average}</div>
+                            <div className='featured--points'>{item.vote_average} pontos</div>
                             <div className='featured--year'>{firstDate.getFullYear()}</div>
                             <div className='featured--seasons'>{item.seasons.length} temporada{item.seasons.length !== 1 ? 's' : ''}</div>
                         </div>

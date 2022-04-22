@@ -4,6 +4,8 @@ import Tmdb from './Tmdb'
 import './App.css'
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Loading from './assets/images/loading.gif'
 
 export default () => {
 
@@ -60,6 +62,17 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items}/>
         ))}
       </section>
+
+      <Footer />
+      
+      {movieList.length <= 0 &&
+        <div className='loading'>
+          <img src={Loading} alt='loading'/>
+        </div>
+      }
     </div>
   )
 }
+
+
+
