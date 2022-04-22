@@ -4,7 +4,7 @@ import './FeaturedMovie.css'
 export default ({item}) => {
     console.log(item)
 
-    const firstDate =  new Date(item.first_air_data)
+    const firstDate =  new Date(item.first_air_date)
 
     let genres = []
     for(let i in item.genres){
